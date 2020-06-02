@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Hind:wght@600&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Test site</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="about_us">
+                <a href="#">О нас</a>
+                <a href="#">Новые поступления</a>
+                <a href="#">Доставка и оплата</a>
+                <a href="#">Прайс-лист</a>
+                <a href="#">Сотрудничество</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="login">
+                <div class="gray_1" onclick="show_come('none')"></div>
+                <div class="gray_2" onclick="show('none')"></div>
+                <img src="images/user.png" alt="">
+                <!-- -------------------------- come_in -------------------------- -->
+                <a href="#" class="login" onclick="show_come('block')">Вход </a> /
+                <div class="window_come_in">
+                    <img class='close' src="images/33.png" alt="close" onclick="show_come('none')">
+                    <div class="regLogin_comeIn">
+                        <h2>Войти</h2>
+                        <form action="">
+                            <input type="text" placeholder="Email" class="input">
+                            <input type="password" placeholder="Пароль" class="input">
+                            <input type="submit" value="Войти" class="login_come">
+                        </form>
+                    </div>
+                </div>
+                <!-- -------------------------- регистрация -------------------------- -->
+                <a href="#" onclick="show('block')" class="login">Регистрация</a>
+                <div class="window">
+                    <img class='close' src="images/33.png" alt="close" onclick="show('none')">
+                    <div class="regLogin">
+                        <h2>Регистрация</h2>
+                        <form action="">
+                            <input type="text" placeholder="Имя" class="input">
+                            <input type="text" placeholder="38(__)__-__" class="input">
+                            <input type="text" placeholder="Email" class="input">
+                            <input type="text" placeholder="Логин" class="input">
+                            <input type="password" placeholder="Пароль" class="input">
+                            <input type="password" placeholder="Повторите пароль" class="input">
+                            <input type="submit" value="Зарегистрироваться" class="login_open">
+                        </form>
+                    </div>
+                </div>
+                <!-- -------------------------------------------------------------------- -->
+            </div>
+        </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="conteiner_flex">
+                <div class="logo">
+                    <img src="images/test_logo.png" alt="logo">
+                </div>
+                <div class="components">
+                    <p class="size_12px">
+                        Электроные компоненты и
+                        радиодетали, источники
+                        питания и LED продукция
+                    </p>
+                </div>
+                <div class="number_tel">
+                    <div class="day">
+                        <img src="images/часы.png" alt="">
+                        <p class="day_p">Пн-Пт 9:30 по 18:30</p>
+                    </div>
+                    <p class="p_number">890 765 43</p>
+                    <p>
+                        <select>
+                            <option class="dashed">Наши телефоны:</option>
+                            <option value="Чебурашка">+3803456732</option>
+                            <option value="Крокодил Гена">+3803456732</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="address">
+                    <p><img src="images/mark.png" alt="">
+                        <select>
+                            <option>Наши адреса:</option>
+                            <option value="Чебурашка">ул.Шевченка 9</option>
+                            <option value="Крокодил Гена">ул.Шевченка 9</option>
+                        </select>
+                    </p>
+                    <p class="number size_14px"><img src="images/phone.png" alt="">Обратный звонок</p>
+                </div>
+                <div class="backet">
+                    <div class="backet_icon">
+                        <p class="quantity">0</p>
+                        <a href="cart.html"><img src="images/покупки.png" alt=""></a>
+                    </div>
+                    <div class="sum">
+                        <p>Корзина</p>
+                        <p class="total_amount">0 грн</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="container">
+            <div class="container_search">
+                <div class="catalog dws-menu">
+                    <div class="rectangle">
+                        <div class="rectangle_1"></div>
+                        <div class="rectangle_1"></div>
+                        <div class="rectangle_1"></div>
+                    </div>
+                    <li class="li_catalog"><a href="#">КАТАЛОГ ТОВАРОВ</a>
+                        <ul class="first_ul">
+                            <li><a href="#">LED продукция</a>
+                                <ul>
+                                    <li><a href="#">Лампы</a></li>
+                                    <li><a href="#">Корпусы</a></li>
+                                    <li><a href="#">Комплектующие</a>
+                                        <ul>
+                                            <li><a href="#">Расходные материалы</a></li>
+                                            <li><a href="#">Коннекторы</a></li>
+                                            <li><a href="#">Удлинители</a></li>
+                                            <li><a href="#">Контроллеры</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Электроника</a>
+                                <ul>
+                                    <li><a href="#">Камеры</a></li>
+                                    <li><a href="#">Компьютеры</a></li>
+                                    <li><a href="#">Телефоны</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Питание</a>
+                                <ul>
+                                    <li><a href="#">Блоки питания</a></li>
+                                    <li><a href="#">Мобильные батареи</a></li>
+                                    <li><a href="#">Безпроводные источники</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </div>
+                <div class="search">
+
+                    <input type="text" placeholder="Поиск в каталоге">
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <div class="slider">
+        <section class="lazy" data-sizes="50vw">
+            <div class="slider_div">
+                <div class="discount">
+                    <h2>28 НОЯБРЯ - 29 ДЕКАБРЯ</h2>
+                    <div class="discount10">
+                        <p>10%</p>
+                    </div>
+                    <h3>Специальное предложение только <br>
+                        для вас -10% скидки </h3>
+                </div>
+                <div class="goods_2">
+                    <img src="images/слой3.png" alt="" class="img_2">
+                </div>
+                <div class="goods">
+                    <img src="images/слой1.png" alt="" class="img_1">
+                </div>
+                <div class="discount_buy">
+                    <p>Акустический кабель Dialan
+                        медь 2*0,75мм прозрачный
+                        ПВХ 1м </p>
+
+                    <h3>БЫЛО 13.60 грн </h3>
+                    <h1>12.24 грн</h1>
+                    <button class="to-cart" data-articul="7">УСПЕЙТЕ КУПИТЬ</button>
+                </div>
+            </div>
+            <div class="slider_div">
+                <div class="discount">
+                    <h2>28 НОЯБРЯ - 29 ДЕКАБРЯ</h2>
+                    <div class="discount10">
+                        <p>10%</p>
+                    </div>
+                    <h3>Специальное предложение только <br>
+                        для вас -10% скидки </h3>
+                </div>
+                <div class="goods_2">
+                    <img src="images/слой3.png" alt="" class="img_2">
+                </div>
+                <div class="goods">
+                    <img src="images/слой1.png" alt="" class="img_1">
+                </div>
+                <div class="discount_buy">
+                    <p>Акустический кабель Dialan
+                        медь 2*0,50мм прозрачный
+                        ПВХ 1м </p>
+
+                    <h3>БЫЛО 13.60 грн </h3>
+                    <h1>12.24 грн</h1>
+                    <button class="to-cart" data-articul="8">УСПЕЙТЕ КУПИТЬ</button>
+                </div>
+            </div>
+            <div class="slider_div">
+                <div class="discount">
+                    <h2>28 НОЯБРЯ - 29 ДЕКАБРЯ</h2>
+                    <div class="discount10">
+                        <p>10%</p>
+                    </div>
+                    <h3>Специальное предложение только <br>
+                        для вас -10% скидки </h3>
+                </div>
+                <div class="goods_2">
+                    <img src="images/слой3.png" alt="" class="img_2">
+                </div>
+                <div class="goods">
+                    <img src="images/слой1.png" alt="" class="img_1">
+                </div>
+                <div class="discount_buy">
+                    <p>Акустический кабель Dialan
+                        медь 2*0,25мм прозрачный
+                        ПВХ 1м </p>
+
+                    <h3>БЫЛО 13.60 грн </h3>
+                    <h1>12.24 грн</h1>
+                    <button class="to-cart" data-articul="9">УСПЕЙТЕ КУПИТЬ</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="info_block">
+        <div class="block elip_1">
+            <h3>АКЦИОННЫЕ ТОВАРЫ</h3>
+            <hr class="hr_88ce0b">
+            <p>Поступление нового товара за <br>
+                последние 7 календарных дней. <br>
+                Лучшие цены в Украине</p>
+            <button class="button_88ce0b">ПОДРОБНЕЕ</button>
+        </div>
+        <div class="block elip_2">
+            <h3>КАТАЛОГ ТОВАРОВ</h3>
+            <hr class="hr_f76c06">
+            <p>Поступление нового товара за <br>
+                последние 7 календарных дней. <br>
+                Лучшие цены в Украине</p>
+            <button class="button_f76c06">ПОДРОБНЕЕ</button>
+        </div>
+        <div class="block elip_3">
+            <h3>НОВЫЕ ПОСТУПЛЕНИЯ</h3>
+            <hr class="hr_f76c06">
+            <p>Поступление нового товара за <br>
+                последние 7 календарных дней. <br>
+                Лучшие цены в Украине</p>
+            <button class="button_f76c06">ПОДРОБНЕЕ</button>
+        </div>
+    </div>
+
+    <div class="best_goods">
+        <div class="slider_header">
+            <h2>Лучшее предложения</h2>
+            <hr>
+        </div>
+        <div class="button_slider">
+            <button class="slider-button" onclick="sliderRight()"><img src="images/стрелка_влево.png" alt="" width="40"
+                    height="30"></button>
+            <button class="slider-button" onclick="sliderLeft()"><img src="images/Стрелка_вправо.png" alt="" width="40"
+                    height="30"></button>
+
+        </div>
+        <div class="polosa">
+        </div>
+    </div>
+
+    <div class="little_info">
+        <div class="aboutUs">
+            <h2>О нас
+                <hr>
+            </h2>
+
+            <div class="figure_1">
+                <img src="images/фигура_1.png" alt="">
+            </div>
+            <div class="figure_2">
+                <img src="images/фигура_2.png" alt="">
+            </div>
+            <div class="about_us_info">
+
+                <p class="size_14px">Мы являемся современной, быстро развивающейся компанией, в которой основными
+                    принципами работы являются высокий профессионализм, ответственность перед каждым клиентом и
+                    надежность гарантируемого
+                    результата.
+                </p>
+                <p class="size_14px">
+                    В жизнь эти принципы воплощаются командой высококвалифицированных специалистов, которые работают на
+                    благо компании и разделяют общие ценности и цели.
+
+                </p>
+                <a href="">Подробнее</a>
+            </div>
+        </div>
+        <div class="goods_today">
+            <h2>Товар дня</h2>
+            <hr>
+            <div class="goods_today_block">
+                <div class="today_img">
+                    <img src="images/block.png" alt="block">
+                </div>
+                <div class="today_info">
+                    <h5>Автомобильный блок птания для ноутбку ASUS W5G00A <br> 19V 3.42 A 5.5x2.5</h5>
+                    <div class="info_delivery_quantity">
+                        <p class="size_10px margin_0"> <img src="images/20_1.png" alt="" width="20" height="20"
+                                class="img_top">Есть доставка
+                        </p>
+
+                        <p class="size_10px margin_0"> <img src="images/20.png" alt="" width="20" height="20"
+                                class="img_top">Есть в наличии 23шт</p>
+                    </div>
+                    <div class="today_cost">
+                        <p class="size_10px">Цена за штуку:</p>
+                        <p class="size_18px green">188.40 грн</p>
+                    </div>
+                </div>
+            </div>
+            <div class="goods_today_block">
+                <div class="today_img">
+                    <img src="images/block.png" alt="block">
+                </div>
+                <div class="today_info">
+                    <h5>Автомобильный блок птания для ноутбку ASUS W5G00A <br> 19V 3.42 A 5.5x2.5</h5>
+                    <div class="info_delivery_quantity">
+                        <p class="size_10px margin_0"> <img src="images/20_1.png" alt="" width="20" height="20"
+                                class="img_top">Есть доставка
+                        </p>
+
+                        <p class="size_10px margin_0"> <img src="images/20.png" alt="" width="20" height="20"
+                                class="img_top">Есть в наличии 23шт</p>
+                    </div>
+                    <div class="today_cost">
+                        <p class="size_10px">Цена за штуку:</p>
+                        <p class="size_18px green">188.40 грн</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="usefuls">
+            <h2>Полезности</h2>
+            <hr>
+            <div class="for_700px">
+                <div class="useful_info_block">
+                    <div class="data">
+                        <p class="data_p">15</p>
+                        <p class="data_month size_10px">Декабрь</p>
+                    </div>
+                    <div class="useful_info">
+                        <h5>Обзор паяльной лампы <br> 19V 3.42 A 5.5x2.5</h5>
+                        <p class="size_12px">Представляем Вашему вниманию <br>
+                            видеообзор паяльнойстанции ...</p>
+                    </div>
+                </div>
+                <div class="useful_info_block">
+                    <div class="data">
+                        <p class="data_p">17</p>
+                        <p class="data_month size_10px">Декабрь</p>
+                    </div>
+                    <div class="useful_info">
+                        <h5>Обзор паяльной лампы <br> 19V 3.42 A 5.5x2.5</h5>
+                        <p class="size_12px">Представляем Вашему вниманию <br>
+                            видеообзор паяльнойстанции ...</p>
+                    </div>
+                </div>
+                <div class="useful_info_block">
+                    <div class="data">
+                        <p class="data_p">19</p>
+                        <p class="data_month size_10px">Декабрь</p>
+                    </div>
+                    <div class="useful_info">
+                        <h5>Обзор паяльной лампы <br> 19V 3.42 A 5.5x2.5</h5>
+                        <p class="size_12px">Представляем Вашему вниманию <br>
+                            видеообзор паяльнойстанции ...</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_menu">
+            <div class="footer_menu_width">
+                <div class="footer_menu_main ">
+                    <div class="footer_menu_img">
+                        <img src="images/копия_2.png" alt="" width="50" height="50">
+                    </div>
+                    <div class="foote_menu_info">
+                        <p class="size_14px">НОВЫЕ ПОСТУПЛЕНИЯ</p>
+                        <p class="size_10px">Быстрая доставка по<br> всей Украине</p>
+                    </div>
+                </div>
+                <div class="footer_menu_main border_right">
+                    <div class="margin_left">
+                        <div class="footer_menu_img">
+                            <img src="images/копия_4.png" alt="" width="70" height="40">
+                        </div>
+                        <div class="foote_menu_info">
+                            <p class="size_14px">ОПЛАТА И ДОСТАВКА</p>
+                            <p class="size_10px">Быстрая доставка по<br> всей Украине</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_menu_main border_right">
+                    <div class="margin_left">
+                        <div class="footer_menu_img">
+                            <img src="images/копия_3.png" alt="" width="40" height="50">
+                        </div>
+                        <div class="foote_menu_info">
+                            <p class="size_14px">НАШИ ПРАЙС-ЛИСТЫ</p>
+                            <p class="size_10px">Быстрая доставка по<br> всей Украине</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_menu_main border_right">
+                    <div class="margin_left">
+                        <div class="footer_menu_img">
+                            <img src="images/копия_2_2.png" alt="" width="40" height="50">
+                        </div>
+                        <div class="foote_menu_info">
+                            <p class="size_14px">НАШИ МАГАЗИНЫ</p>
+                            <p class="size_10px">Быстрая доставка по<br> всей Украине</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_info">
+            <div class="footer_width size_18px">
+                <div class="company">
+                    <h3>О Компании</h3>
+                    <p>Новые поступления</p>
+                    <p>Новости</p>
+                    <p>Контакты</p>
+                    <p>Дропшопинг с нами</p>
+                    <p>Сотрудничество с предпиятием</p>
+                </div>
+                <div class="company">
+                    <h3>Сервис</h3>
+                    <p>Доставка и оплата</p>
+                    <p>Наши прайс-листы</p>
+                    <p>Каталог товаров</p>
+                </div>
+                <div class="company">
+                    <h3>Звоните нам</h3>
+                    <p>096 597-68-62</p>
+                    <p class="size_10px p_street">Пр.правды 93/3</p>
+                    <p>096 597-68-62</p>
+                    <p class="size_10px p_street">Пр.правды 93/3</p>
+                    <p>096 597-68-62</p>
+                    <p class="size_10px p_street">Пр.правды 93/3</p>
+                </div>
+                <div class="company">
+                    <h3>Мы в соц-сетях</h3>
+                    <div class="social_network">
+                        <div class="social_img">
+                            <img src="images/vk.png" alt="">
+                        </div>
+                        <div class="social_img">
+                            <img src="images/facebook.png" alt="">
+                        </div>
+                        <div class="social_img">
+                            <img src="images/ok.png" alt="">
+                        </div>
+                    </div>
+                    <p class="size_10px " style="margin-top:10px"> &#169 2016 Radio Store</p>
+                    <p class="size_10px">Разработка сайта <u>First Ukrainian Studio</u></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="class/Cart.js"></script>
+    <script src="js/app_2.js"></script>
+    <script src="js/goods.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

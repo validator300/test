@@ -1,0 +1,159 @@
+body{
+    height: 100%;
+}
+footer{
+    margin-top: 20%;
+}
+.container_cart{
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+}
+.cart-out{
+    margin: 50px 0;
+
+}
+table.cart {
+    width: 1000px;
+    border-collapse: collapse;
+    border: 1px solid  #666;
+}
+
+table.cart td {
+    border: 1px solid #666;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+table.cart img {
+    width: 120px;
+}
+
+table.cart span.total {
+    font-weight: 800;
+}
+
+.goods img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    max-height:  222px;
+}
+
+ h1{
+   text-align: center;
+}
+.goods h2 {
+    font-size: 22px;
+    margin: 0 0 20px 0;
+    line-height: 100%;
+}
+
+.goods .package.featured.text-center {
+    text-align: center;
+}
+
+.goods .package.featured p.price {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+.order{
+    width: 200px;
+    height: 50px;
+    margin-left: 43%;
+    background: #f76c06;
+    border: 1px solid #f76c06;
+    border-radius: 10px;
+    color:white;
+}
+/* ---------------- order -------------- */
+.order_block{
+    width: 360px;
+    height: 400px;
+    margin:40px auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    display: none;
+}
+.close{
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 365px;
+    cursor: pointer;
+    margin-bottom: -10px;
+}
+
+.order_form{
+    width: 370px;
+    height: 400px;
+    margin:0 auto 20px auto ;
+    border-top:10px solid #8ecf04;
+    text-align: center; 
+    background: #fff;
+}
+.order_form p{
+    margin: 5px 20px;
+}
+.input_order{
+        width: 260px;
+        padding: 12px;
+        margin-bottom: 5px;
+        border: 1px solid gray;
+}
+.gray_3{
+    background-color: rgba(1, 1, 1, 0.75);
+    position: fixed;
+    display: none;
+    z-index: 80;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+@media (min-width: 461px) and (max-width: 770px){
+    .container_cart{
+        width: auto;
+        display: block;
+        margin:0;
+    }
+    table.cart {
+        width: auto;
+    }
+    .order{
+        margin-left: 35%;
+    }
+}
+@media (min-width: 320px) and (max-width: 460px){ 
+
+.container_cart{
+    width: auto;
+    margin: 0;
+    display: block;
+    font-size: 12px;
+}
+table.cart {
+    width: 300px;
+
+}
+table.cart img {
+    width: 80px;
+}
+table.cart td {
+    border: 1px solid #666;
+    padding: 2px 5px;
+    text-align: center;
+}
+.order{
+    margin-left: 23%;
+}
+.order_block{
+    margin: 80px 2px;
+}
+}
